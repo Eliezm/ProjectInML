@@ -1,0 +1,39 @@
+C:\Users\eliez\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\eliez\Desktop\Studies\Fall 2025\0950280 - פרויקט תכן בלמידה חישובית\ProjectInML\ProjectInML\inference.py" 
+Device: cpu
+→ 108 cc/cd samples
+→ 48 held-out test samples
+
+Loading ClinicalBERT model…
+Running inference on cc/cd split…
+ cc/cd  Accuracy: 1.0000
+ cc/cd  F1      : 1.0000
+              precision    recall  f1-score   support
+
+     Control       1.00      1.00      1.00        54
+          AD       1.00      1.00      1.00        54
+
+    accuracy                           1.00       108
+   macro avg       1.00      1.00      1.00       108
+weighted avg       1.00      1.00      1.00       108
+
+Running inference on held-out test set…
+ TEST  Accuracy: 0.8542
+ TEST  F1      : 0.8444
+              precision    recall  f1-score   support
+
+     Control       0.81      0.92      0.86        24
+          AD       0.90      0.79      0.84        24
+
+    accuracy                           0.85        48
+   macro avg       0.86      0.85      0.85        48
+weighted avg       0.86      0.85      0.85        48
+
+
+Some test examples:
+S187.cha true=1  pred=1
+S200.cha true=1  pred=1
+S186.cha true=0  pred=0
+S203.cha true=1  pred=1
+S184.cha true=0  pred=0
+
+Process finished with exit code 0
